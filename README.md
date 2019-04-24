@@ -23,3 +23,7 @@ this Impeletation do not care the batch size.The FLOPs has nothing to do with ba
 
 you can use make the detail=False to hide the detials, only print the total FLOPs
   
+# NOTE
+the FLOPs may be diffrent when you use diffrent code to compute because the FLOPs don not have a strict definition.
+for example, in the Conv2d, somebody may only consider the mutiply operations ,somebody may just think the add operations' number is the same with the mutiply operation. These problem can be ignored if you just to compare the related computations.
+__This impetetations compute all the float oparations strictlly and exactly__
